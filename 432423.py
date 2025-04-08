@@ -1,7 +1,8 @@
 import requests
 
 url = 'http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList'
-params ={'serviceKey' : 'O9iepCIgT84Rh28Wc73CGiQesRVek87O9P30OpRy5TmYrIODe6MfSDSx7hYPbsiwGBmbwP28Y+/C6nNqbXbqhA==', 'pageNo' : '1', 'numOfRows' : '30', 'dataType' : 'json', 'dataCd' : 'ASOS', 'dateCd' : 'DAY', 'startDt' : '20000101', 'endDt' : '20200601', 'stnIds' : '108',"_type": "json" }
+# params ={'serviceKey' : 'O9iepCIgT84Rh28Wc73CGiQesRVek87O9P30OpRy5TmYrIODe6MfSDSx7hYPbsiwGBmbwP28Y%2B%2FC6nNqbXbqhA%3D%3D', 'pageNo' : '1', 'numOfRows' : '10', 'dataType' : 'json', 'dataCd' : 'ASOS', 'dateCd' : 'DAY', 'startDt' : '20200220', 'endDt' : '20250407', 'stnIds' : '108',"_type": "json" }
+params ={'serviceKey' : 'O9iepCIgT84Rh28Wc73CGiQesRVek87O9P30OpRy5TmYrIODe6MfSDSx7hYPbsiwGBmbwP28Y+/C6nNqbXbqhA==', 'pageNo' : '1', 'numOfRows' : '20', 'dataType' : 'json', 'dataCd' : 'ASOS', 'dateCd' : 'DAY', 'startDt' : '20250320', 'endDt' : '20250407', 'stnIds' : '108',"_type": "json" }
 
 response = requests.get(url, params=params)
 
